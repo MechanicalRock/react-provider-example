@@ -4,7 +4,7 @@ import { useCount } from "./countProvider";
 const CountDisplay = () => {
   const [{ count }] = useCount();
 
-  return <div>{count}</div>;
+  return <div data-testid="text-count">{count}</div>;
 };
 
 export default CountDisplay;

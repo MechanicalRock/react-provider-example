@@ -12,7 +12,7 @@ const CountInput = () => {
 
   return (
     <div>
-      <input type="number" value={count} onChange={onChange} />
+      <input data-testid="input-count" type="number" value={count} onChange={onChange} />
     </div>
   );
 };

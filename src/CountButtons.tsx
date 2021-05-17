@@ -15,8 +15,8 @@ const CountButtons = () => {
 
   return React.useMemo(() => (
     <div>
-      <button onClick={onIncrement}>Increment</button>
-      <button onClick={onDecrement}>Decrement</button>
+      <button data-testid="button-increment" onClick={onIncrement}>Increment</button>
+      <button data-testid="button-decrement" onClick={onDecrement}>Decrement</button>
     </div>
   ), [onIncrement, onDecrement]);
 };
